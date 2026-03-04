@@ -1,7 +1,9 @@
 streamlit
 pandas
 plotly
-openpyxl
 wordcloud
 matplotlib
 google-generativeai
+openpyxl
+selenium
+webdriver-manager
