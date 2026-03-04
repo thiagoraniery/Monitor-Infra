@@ -1,0 +1,33 @@
+name: Robo Monitor iNFRA
+
+on:
+  schedule:
+    # 13:50 no Brasil (GMT-3) é 16:50 no horário UTC (que o GitHub usa)
+    - cron: '50 16 * * *'
+  workflow_dispatch: # Isso cria um botão para você rodar manualmente quando quiser
+
+jobs:
+  atualizar_dados:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiando os arquivos do projeto
+        uses: actions/checkout@v3
+
+      - name: Instalando o Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalando as bibliotecas (Requirements)
+        run: pip install -r requirements.txt
+
+      - name: Rodando a extracao de noticias
+        run: python executar_extracao.py
+
+      - name: Salvando o Excel novo no GitHub
+        run: |
+          git config --global user.name "Robo iNFRA"
+          git config --global user.email "bot@infra.com"
+          git add AgenciaInfra_Historico.xlsx
+          git commit -m "Auto-update: $(date)"
+          git push
