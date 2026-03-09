@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange.svg)](https://deepmind.google/technologies/gemini/)
 
-Este projeto foi desenvolvido para centralizar, monitorar e analisar notícias do setor de infraestrutura brasileira, da agência infra (Energia, Transportes, Saneamento, Mineração, etc). Ele substitui a coleta manual de dados por um fluxo automatizado que utiliza **IA Generativa** para criar briefings executivos em tempo real.
+Este projeto foi desenvolvido para centralizar, monitorar e analisar notícias do setor de infraestrutura brasileira, da agência infra (Energia, Transportes, Saneamento, Mineração, etc). Ele substitui a coleta manual de dados por um fluxo automatizado que utiliza **IA** para criar briefings executivos em tempo real.
 
 ---
 
