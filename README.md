@@ -12,7 +12,7 @@ Este projeto foi desenvolvido para centralizar, monitorar e analisar notícias d
 ##  O Problema vs. A Solução
 
 * **O Problema:** O alto volume de publicações diárias no setor tornava inviável o acompanhamento minucioso por parte da diretoria sem uma equipe dedicada exclusivamente à leitura e síntese de pautas. Era necessário ler dezenas de matérias diariamente para compilar relatórios para a diretoria.
-* **A Solução:** Desenvolvimento de um pipeline de inteligência que resolve o gargalo informacional através da triagem cognitiva automatizada. A solução orquestra a varredura em larga escala (Web Scraping) e utiliza o Gemini 2.5 Flash para realizar a síntese estratégica de dezenas de matérias simultaneamente. O sistema não apenas coleta dados, mas realiza o "trabalho pesado" de leitura e correlação, convertendo um volume massivo de dados brutos em um briefing executivo consolidado. Isso elimina a dependência de curadoria manual, garante que nenhum fato crítico seja ignorado e entrega insights em frações de segundo. 
+* **A Solução:** Desenvolvimento de um pipeline que resolve o gargalo informacional através da triagem cognitiva automatizada. A solução orquestra a varredura em larga escala (Web Scraping) e utiliza o Gemini 2.5 Flash para realizar a síntese estratégica de dezenas de matérias simultaneamente. O sistema não apenas coleta dados, mas realiza o "trabalho pesado" de leitura e correlação, convertendo um volume massivo de dados brutos em um briefing executivo consolidado. Isso elimina a dependência de curadoria manual, garante que nenhum fato crítico seja ignorado e entrega insights em frações de segundo. 
 
 ---
 
