@@ -11,9 +11,9 @@ import time
 import google.generativeai as genai
 import json
 
-CHAVE_API = st.secrets["GEMINI_API_KEY"] 
+CHAVE_API = st.secrets["GEMINI_API_KEY"]  
 genai.configure(api_key=CHAVE_API)
-modelo_ia = genai.GenerativeModel('gemini-2.5-flash') 
+modelo_ia = genai.GenerativeModel('gemini-3-flash-preview') 
 
 @st.cache_data(ttl=86400)
 def gerar_resumo_consolidado_ia(categoria, lista_noticias, data_ref):
