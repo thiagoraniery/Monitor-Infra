@@ -1,10 +1,7 @@
 name: Robo Monitor iNFRA
 
 on:
-  schedule:
-    # 13:50 no Brasil (GMT-3) é 16:50 no horário UTC (que o GitHub usa)
-    - cron: '50 16 * * *'
-  workflow_dispatch: # Isso cria um botão para você rodar manualmente quando quiser
+  workflow_dispatch: # Disparo manual — clique em "Run workflow" na aba Actions
 
 jobs:
   atualizar_dados:
@@ -29,5 +26,5 @@ jobs:
           git config --global user.name "Robo iNFRA"
           git config --global user.email "bot@infra.com"
           git add AgenciaInfra_Historico.xlsx
-          git commit -m "Auto-update: $(date)"
+          git diff --staged --quiet || git commit -m "Auto-update: $(date)"
           git push
